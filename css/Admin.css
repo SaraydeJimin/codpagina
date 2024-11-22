@@ -1,0 +1,391 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+/* Encabezado */
+.header {
+    background-color: #00BFFF;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-title h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Barra de navegación */
+.nav {
+    background-color: black;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav a img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.nav .catalogo {
+    font-weight: bold;
+    background-color: #FFD700;
+    color: black;
+}
+
+.nav .catalogo:hover {
+    background-color: #FFA500;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    margin: 0 10px;
+}
+
+.nav-right a:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+/* Contenido principal */
+.content {
+    margin-top: 120px;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin: 20px 0;
+}
+
+/* Estilo del logo */
+.logo {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Información de contacto */
+.contact-info {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.contact-info .chat-button img {
+    width: 100px;
+    /* Tamaño más grande por defecto */
+    height: 100px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-info .chat-button img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    /* Efecto de brillo */
+}
+
+/* Pie de página */
+.footer {
+    background-color: #00BFFF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Mantiene los detalles de contacto y las redes sociales separados */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.address,
+.phone {
+    margin: 0;
+}
+
+.address strong,
+.phone strong {
+    font-weight: bold;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    /* Permite que el contenido social se centre */
+    margin-left: -7cm;
+    /* Mueve el contenedor 7 cm a la izquierda */
+}
+
+.conocenos {
+    text-align: center;
+    margin-bottom: 10px;
+    /* Espacio entre el título y los íconos */
+}
+
+.conocenos h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.conteiner {
+    width: 520px;
+    height: 45%;
+    padding: 20px;
+    margin: auto;
+    border-radius: 60px;
+    background-color: #3775b0;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Productos {
+    width: 1800px;
+    height: 600px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 0px;
+    background-color: white;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Admin:hover {
+    background-color: #4a8dcc;
+    padding-bottom: 40px;
+}
+
+.Sesion_admin {
+    background-color: #3775b0;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 0 auto;
+    transition: 0.3s ease;
+}
+
+.Admin {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #3775b0;
+    padding: 5px;
+    border-radius: 15px;
+    width: 480px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #4a8dcc;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+select {
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(8, 8, 8);
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+button[type="button"],
+button[type="submit"],
+input[type="reset"] {
+    background-color: #00bfff;
+    color: white;
+    width: 150px;
+    height: 35px;
+    border: 2px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+
+
+button:hover,
+button[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0ea5d8;
+}
+
+.help-text {
+    display: none;
+    padding: 5px;
+    color: #000000;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Admin:hover .help-text {
+    display: block;
+    opacity: 1;
+}
+
+.oval-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.oval-image:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.img {
+    width: 10%;
+    height: 10%;
+}
+
+
+
+
+
+
+body {
+    background-color: #09B7D6;
+}
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1, h3 {
+    color: #343a40;
+}
+form {
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+}
+.btn {
+    border-radius: 5px;
+}
+table {
+    margin-top: 20px;
+}
+th, td {
+    vertical-align: middle !important;
+    text-align: center;
+}
